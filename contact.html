@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HELLO!YOYOGI | CONTACT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=IM+Fell+English:ital@0;1&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+  <div class="background">
+
+    <div class="background__logo">
+
+      <svg class="background__hello" viewBox="0 0 300 120">
+        <path id="hello-curve"
+          d="M 20,110 Q 100,-20 280,60"
+          fill="none">
+        </path>
+
+        <text>
+          <textPath href="#hello-curve">
+            HELLO!
+          </textPath>
+        </text>
+      </svg>
+
+      <span class="background__yoyogi">YOYOGI</span>
+
+    </div>
+
+    <img src="images/nav-cloud.png" alt=""
+      class="background__cloud background__cloud--left">
+
+    <img src="images/nav-cloud.png" alt=""
+      class="background__cloud background__cloud--right">
+
+    <img src="images/nav-bg.png" alt=""
+      class="background__hill">
+
+  </div>
+
+
+  <nav class="side-nav">
+
+<a href="index.html" class="side-nav__logo">
+    <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+
+    <img src="images/nav-home-arrow.svg" alt=""
+        class="home-guide__arrow">
+
+    <span class="home-guide">
+        <span>back</span>
+        <span>to</span>
+        <span>home</span>
+    </span>
+</a>
+
+    <div class="side-nav__menu">
+
+      <img src="images/nav-pole.svg" alt=""
+        class="side-nav__pole">
+
+      <ul class="side-nav__list">
+
+        <li class="side-nav__item">
+          <a href="enjoy.html"
+            class="side-nav__link side-nav__link--enjoy">
+            <span>ENJOY</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="shop.html"
+            class="side-nav__link side-nav__link--shop">
+            <span>SHOP&amp;CAFE</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="access.html"
+            class="side-nav__link side-nav__link--access">
+            <span>ACCESS</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="contact.html"
+            class="side-nav__link side-nav__link--contact">
+            <span>CONTACT</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+
+  <main class="main">
+
+<button class="mobile-menu__button" type="button" aria-label="メニュー" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+  <section class="mainvisual">
+
+    <img src="images/contact-main.png"
+      alt="代々木公園の花壇"
+      class="mainvisual__image">
+
+    <a href="index.html" class="mainvisual__logo">
+      <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+    </a>
+
+    <p class="mainvisual__text">
+      代々木公園について、<br>
+      気になることはありますか？
+    </p>
+
+    <div class="mainvisual__fukidashi">
+      <span>お問い合わせ</span>
+    </div>
+
+  </section>
+
+  <section class="contact">
+
+    <h1 class="contact__title">
+
+      <svg viewBox="0 0 200 60">
+        <path id="contact-curve"
+          d="M 15,50 Q 100,-10 185,50"
+          fill="none">
+        </path>
+
+        <text>
+          <textPath href="#contact-curve"
+            startOffset="50%" text-anchor="middle">
+            CONTACT
+          </textPath>
+        </text>
+      </svg>
+
+    </h1>
+
+    <img src="images/contact-ill.svg"
+      alt="" class="contact__ill">
+
+    <ol class="contact__steps">
+
+      <li class="contact__step is-active">
+        <span>STEP 01</span>
+        入力
+      </li>
+
+      <li class="contact__step">
+        <span>STEP 02</span>
+        確認
+      </li>
+
+      <li class="contact__step">
+        <span>STEP 03</span>
+        完了
+      </li>
+
+    </ol>
+
+
+    <!-- STEP 01 -->
+    <form class="contact__form"
+      id="contact-form" novalidate>
+
+      <div class="contact__field">
+
+        <label class="contact__label" for="last-name">
+          お名前
+          <span class="contact__required">※ 必須</span>
+        </label>
+
+        <div class="contact__name">
+
+          <input type="text"
+  id="last-name"
+  name="last-name"
+  placeholder="例：山田（姓）"
+  aria-label="姓"
+  autocomplete="family-name"
+  required>
+
+<input type="text"
+  id="first-name"
+  name="first-name"
+  placeholder="例：太郎（名）"
+  aria-label="名"
+  autocomplete="given-name"
+  required>
+
+        </div>
+
+        <p class="contact__error" id="name-error"></p>
+
+      </div>
+
+      <div class="contact__field">
+
+        <label class="contact__label" for="email">
+          メールアドレス
+          <span class="contact__required">※ 必須</span>
+        </label>
+
+        <input type="email"
+  id="email"
+  name="email"
+  placeholder="例：example@email.com"
+  autocomplete="email"
+  required>
+
+        <p class="contact__error" id="email-error"></p>
+
+      </div>
+
+
+<div class="contact__field">
+
+  <label class="contact__label" for="category">
+    お問い合わせの種類
+    <span class="contact__required">※ 必須</span>
+  </label>
+
+  <select id="category" name="category" required>
+
+    <option value="" disabled selected>選択してください</option>
+    <option value="公園について">公園について</option>
+    <option value="楽しみ方について">楽しみ方について</option>
+    <option value="売店・カフェについて">売店・カフェについて</option>
+    <option value="アクセスについて">アクセスについて</option>
+    <option value="園内施設について">園内施設について</option>
+    <option value="その他">その他</option>
+
+  </select>
+
+  <p class="contact__error" id="category-error"></p>
+
+</div>
+
+
+<div class="contact__field">
+
+  <label class="contact__label" for="message">
+    お問い合わせ内容
+    <span class="contact__required">※ 必須</span>
+  </label>
+
+  <textarea id="message"
+    name="message"
+    placeholder="気になること、なんでも聞いてね！"
+    required></textarea>
+
+  <p class="contact__error" id="message-error"></p>
+
+</div>
+
+
+      <!-- 同意 -->
+      <div class="contact__field">
+
+        <label class="contact__privacy">
+
+          <input type="checkbox"
+            id="privacy"
+            required>
+
+          個人情報の取り扱いに同意する
+
+          <span class="contact__required">※ 必須</span>
+
+        </label>
+
+        <p class="contact__error" id="privacy-error"></p>
+
+      </div>
+
+
+      <button type="submit" class="contact__button">
+        確認する
+      </button>
+
+    </form>
+
+
+    <!-- STEP 02-->
+    <div class="contact__confirm" id="contact-confirm" hidden>
+
+      <p class="contact__message">
+        入力内容をご確認ください。
+      </p>
+
+      <dl class="contact__details">
+
+        <dt>お名前</dt>
+        <dd id="confirm-name"></dd>
+
+        <dt>メールアドレス</dt>
+        <dd id="confirm-email"></dd>
+
+        <dt>お問い合わせの種類</dt>
+<dd id="confirm-category"></dd>
+
+        <dt>お問い合わせ内容</dt>
+        <dd id="confirm-message"></dd>
+
+      </dl>
+
+      <div class="contact__buttons">
+
+        <button type="button"
+          class="contact__button contact__button--back"
+          id="contact-back">
+          戻る
+        </button>
+
+        <button type="button"
+          class="contact__button"
+          id="contact-send">
+          送信する
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- STEP 03-->
+    <div class="contact__complete" id="contact-complete" hidden>
+
+      <h2>入力内容の確認が完了しました。</h2>
+
+      <p>
+        お問い合わせフォームをご利用いただき、<br>
+        ありがとうございます。
+      </p>
+
+      <p>※ このフォームは制作課題用です。</p>
+
+      <a href="index.html" class="contact__button">
+        TOPへ戻る
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+
+    <a href="#" class="footer__top">
+      <span class="footer__arrow">↑</span>
+      <span>TAP TO TOP</span>
+    </a>
+
+    <a href="index.html" class="footer__logo">
+      <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+    </a>
+
+    <p class="footer__title">HELLO!YOYOGI</p>
+
+  </footer>
+
+</main>
+
+<!-- =========================
+     GAME ENTRY
+========================= -->
+
+<button class="game-entry" type="button" aria-label="ゲームで遊ぶ">
+
+    <svg class="game-entry__text" viewBox="0 0 200 200">
+
+        <path id="game-circle"
+            d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"
+            fill="none">
+        </path>
+
+        <text>
+            <textPath href="#game-circle" textLength="477">
+                LET'S PLAY!　 LET'S PLAY!　 LET'S PLAY!　
+            </textPath>
+        </text>
+
+    </svg>
+
+    <img src="images/game-character.svg" alt=""
+        class="game-entry__character">
+
+</button>
+
+
+<!-- =========================
+     GAME MODAL
+========================= -->
+
+<div class="game-modal" id="game-modal" hidden>
+
+    <div class="game-modal__content"
+        role="dialog" aria-modal="true"
+        aria-label="今日、なにする？">
+
+        <button class="game-modal__close" type="button"
+            aria-label="閉じる">×</button>
+
+
+        <img src="images/nav-cloud.png" alt=""
+            class="game-modal__cloud game-modal__cloud--left">
+
+        <img src="images/nav-cloud.png" alt=""
+            class="game-modal__cloud game-modal__cloud--right">
+
+
+        <div class="game-modal__marks">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--01">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--02">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--03">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--04">
+
+        </div>
+
+
+        <div class="game-modal__stone">
+
+            <img src="images/game-stone.svg" alt="">
+
+            <p class="game-modal__message" aria-live="polite">
+                今日、なにする？
+            </p>
+
+        </div>
+
+
+        <button class="game-modal__start" type="button"
+            aria-label="スタート">
+
+            <img src="images/game-start.svg" alt="START">
+
+        </button>
+
+
+        <img src="images/nav-bg.png" alt=""
+            class="game-modal__hill">
+
+    </div>
+
+</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
