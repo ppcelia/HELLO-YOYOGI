@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HELLO!YOYOGI | SHOP&CAFE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=IM+Fell+English:ital@0;1&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="background">
+
+    <div class="background__logo">
+
+      <svg class="background__hello" viewBox="0 0 300 120">
+        <path id="hello-curve"
+          d="M 20,110 Q 100,-20 280,60"
+          fill="none">
+        </path>
+
+        <text>
+          <textPath href="#hello-curve">
+            HELLO!
+          </textPath>
+        </text>
+      </svg>
+
+      <span class="background__yoyogi">YOYOGI</span>
+
+    </div>
+
+    <img src="images/nav-cloud.png" alt=""
+      class="background__cloud background__cloud--left">
+
+    <img src="images/nav-cloud.png" alt=""
+      class="background__cloud background__cloud--right">
+
+    <img src="images/nav-bg.png" alt=""
+      class="background__hill">
+
+  </div>
+
+
+
+  <nav class="side-nav">
+
+<a href="index.html" class="side-nav__logo">
+    <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+
+    <img src="images/nav-home-arrow.svg" alt=""
+        class="home-guide__arrow">
+
+    <span class="home-guide">
+        <span>back</span>
+        <span>to</span>
+        <span>home</span>
+    </span>
+</a>
+
+    <div class="side-nav__menu">
+
+      <img src="images/nav-pole.svg" alt=""
+        class="side-nav__pole">
+
+      <ul class="side-nav__list">
+
+        <li class="side-nav__item">
+          <a href="enjoy.html"
+            class="side-nav__link side-nav__link--enjoy">
+            <span>ENJOY</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="shop.html"
+            class="side-nav__link side-nav__link--shop">
+            <span>SHOP&amp;CAFE</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="access.html"
+            class="side-nav__link side-nav__link--access">
+            <span>ACCESS</span>
+          </a>
+        </li>
+
+        <li class="side-nav__item">
+          <a href="contact.html"
+            class="side-nav__link side-nav__link--contact">
+            <span>CONTACT</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <main class="main">
+
+<button class="mobile-menu__button" type="button" aria-label="メニュー" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+  <section class="mainvisual">
+
+    <img src="images/shopcafe-main.png" alt="代々木公園"
+      class="mainvisual__image">
+
+    <a href="index.html" class="mainvisual__logo">
+      <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+    </a>
+
+    <p class="mainvisual__text">
+      おいしいものを楽しみたい
+    </p>
+
+    <div class="mainvisual__fukidashi">
+      <span>園内のお店</span>
+    </div>
+
+  </section>
+
+  <section class="shop-intro">
+
+    <h1 class="shop-intro__title">
+
+      <svg viewBox="0 0 260 60">
+        <path id="shop-curve"
+          d="M 15,50 Q 130,-10 245,50"
+          fill="none">
+        </path>
+
+        <text>
+          <textPath href="#shop-curve"
+            startOffset="50%" text-anchor="middle">
+            SHOP &amp; CAFE
+          </textPath>
+        </text>
+      </svg>
+
+    </h1>
+
+    <img src="images/cafeshop-ill.svg" alt=""
+      class="shop-intro__ill">
+
+    <p class="shop-intro__text">
+      園内には、散歩の途中に立ち寄れる<br>
+      カフェや売店があります。<br>
+      コーヒーや軽食と一緒に、<br>
+      のんびり公園時間を楽しもう。
+    </p>
+
+  </section>
+
+
+  <!-- SHOP LIST -->
+  <section class="shop-list">
+
+    <!-- SHOP 01 -->
+    <article class="shop-item">
+
+      <span class="shop-item__number">1</span>
+
+      <div class="shop-item__visual">
+
+        <h2 class="shop-item__name">
+          ドトール パークカフェ ＹＯＹＯＧＩ
+        </h2>
+
+        <img src="images/shopcafe-doutor.png"
+          alt="ドトール パークカフェ ＹＯＹＯＧＩ"
+          class="shop-item__image">
+
+      </div>
+
+      <div class="shop-item__info">
+        <p>営業時間：07:00～20:00</p>
+        <p>定休日：なし（年中無休）</p>
+        <p>最寄りの入り口：原宿門</p>
+      </div>
+
+    </article>
+
+
+    <!-- SHOP 02 -->
+    <article class="shop-item">
+
+      <span class="shop-item__number">2</span>
+
+      <div class="shop-item__visual">
+
+        <h2 class="shop-item__name">
+          パークス代々木原宿門店
+        </h2>
+
+        <img src="images/shopcafe-parksharajuku.png"
+          alt="パークス代々木原宿門店"
+          class="shop-item__image">
+
+      </div>
+
+      <div class="shop-item__info">
+        <p>営業時間：9:00～17:00</p>
+        <p>（ラストオーダー16:30）</p>
+        <p>定休日：年末年始</p>
+        <p>最寄りの入り口：原宿門</p>
+      </div>
+
+    </article>
+
+
+    <!-- SHOP 03 -->
+    <article class="shop-item">
+
+      <span class="shop-item__number">3</span>
+
+      <div class="shop-item__visual">
+
+        <h2 class="shop-item__name">
+          パークス代々木の丘店
+        </h2>
+
+        <img src="images/shopcafe-parkshill.png"
+          alt="パークス代々木の丘店"
+          class="shop-item__image">
+
+      </div>
+
+      <div class="shop-item__info">
+        <p>営業時間：9:00～17:00</p>
+        <p>（ラストオーダー16:30）</p>
+        <p>定休日：月曜日（祝日の場合は営業）/ 年末年始</p>
+        <p>最寄りの入り口：参宮橋門</p>
+      </div>
+
+    </article>
+
+
+    <!-- SHOP 04 -->
+    <article class="shop-item">
+
+      <span class="shop-item__number">4</span>
+
+      <div class="shop-item__visual">
+
+        <h2 class="shop-item__name">
+          パークス代々木野外ステージ前店
+        </h2>
+
+        <img src="images/shopcafe-parksstage.png"
+          alt="パークス代々木野外ステージ前店"
+          class="shop-item__image">
+
+      </div>
+
+      <div class="shop-item__info">
+        <p>営業時間：10:00～18:00</p>
+        <p>（12月から2月までは10:00～17:00）</p>
+        <p>定休日：年末年始（12/29は16時まで）</p>
+        <p>最寄りの入り口：渋谷門</p>
+      </div>
+
+    </article>
+
+  </section>
+
+  <div class="shop-message">
+    <p>
+      お気に入りを見つけて、<br>
+      公園でひと休み。
+    </p>
+  </div>
+
+  <footer class="footer">
+
+    <a href="#" class="footer__top">
+      <span class="footer__arrow">↑</span>
+      <span>TAP TO TOP</span>
+    </a>
+
+    <a href="index.html" class="footer__logo">
+      <img src="images/nav-logo.svg" alt="HELLO! YOYOGI">
+    </a>
+
+    <p class="footer__title">HELLO!YOYOGI</p>
+
+  </footer>
+
+</main>
+
+
+<button class="game-entry" type="button" aria-label="ゲームで遊ぶ">
+
+    <svg class="game-entry__text" viewBox="0 0 200 200">
+
+        <path id="game-circle"
+            d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"
+            fill="none">
+        </path>
+
+        <text>
+            <textPath href="#game-circle" textLength="477">
+                LET'S PLAY!　 LET'S PLAY!　 LET'S PLAY!　
+            </textPath>
+        </text>
+
+    </svg>
+
+    <img src="images/game-character.svg" alt=""
+        class="game-entry__character">
+
+</button>
+
+
+<div class="game-modal" id="game-modal" hidden>
+
+    <div class="game-modal__content"
+        role="dialog" aria-modal="true"
+        aria-label="今日、なにする？">
+
+        <button class="game-modal__close" type="button"
+            aria-label="閉じる">×</button>
+
+
+        <img src="images/nav-cloud.png" alt=""
+            class="game-modal__cloud game-modal__cloud--left">
+
+        <img src="images/nav-cloud.png" alt=""
+            class="game-modal__cloud game-modal__cloud--right">
+
+
+        <div class="game-modal__marks">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--01">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--02">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--03">
+
+            <img src="images/game-question.svg" alt=""
+                class="game-modal__mark game-modal__mark--04">
+
+        </div>
+
+        <div class="game-modal__stone">
+
+            <img src="images/game-stone.svg" alt="">
+
+            <p class="game-modal__message" aria-live="polite">
+                今日、なにする？
+            </p>
+
+        </div>
+
+
+        <button class="game-modal__start" type="button"
+            aria-label="スタート">
+
+            <img src="images/game-start.svg" alt="START">
+
+        </button>
+
+
+        <img src="images/nav-bg.png" alt=""
+            class="game-modal__hill">
+
+    </div>
+
+</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

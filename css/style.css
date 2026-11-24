@@ -1,0 +1,1689 @@
+@charset "UTF-8";
+
+:root {
+    --color-primary: #A2DFDC;
+}
+
+.welcome__text,
+.history__intro,
+.history__item p,
+.enjoy-item__text,
+.shop-intro__text,
+.access-intro__info,
+.access-entrance__text,
+.contact__message,
+.contact__details,
+.contact__complete p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #222;
+}
+
+.enjoy-menu__item span,
+.shop-item__info,
+.access-map__station p,
+.access-entrance__item p,
+.shop-message,
+.contact__privacy,
+.seasons__caption {
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222;
+}
+
+.history__label,
+.history__end,
+.enjoy-menu__item a,
+.enjoy-item__label,
+.shop-item__name,
+.access-map__title,
+.access-entrance__title {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 30px;
+}
+
+.enjoy-item__image,
+.shop-item__image,
+.access-entrance__item img,
+.about__item img {
+    display: block;
+    width: 100%;
+}
+
+.enjoy-item__visual,
+.shop-item__visual,
+.access-map__visual {
+    position: relative;
+}
+
+/* ===== 白色橢圓框 ===== */
+
+.history__label,
+.history__end,
+.enjoy-menu__item a,
+.enjoy-item__label,
+.access-map__title,
+.access-entrance__title {
+    font-family: "IM Fell English", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+/* ===== 基本設定 ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: #222;
+}
+
+.background {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #FFFFEB;
+    background-image: radial-gradient(#F8E5A0 1.5px, transparent 1.5px);
+    background-size: 16px 16px;
+}
+
+/* ===== MAIN VISUAL ===== */
+
+.mainvisual {
+    position: relative;
+    width: 100%;
+}
+
+.mainvisual__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 390 / 450;
+    object-fit: cover;
+    border-radius: 0 0 50% 50% / 0 0 20% 20%;
+}
+
+.mainvisual__logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28%;
+}
+
+.mainvisual__logo img {
+    display: block;
+    width: 100%;
+}
+
+.mainvisual__text {
+    position: absolute;
+    top: 28%;
+    right: 13%;
+    writing-mode: vertical-rl;
+    background-color: rgba(162, 223, 220, 0.8);
+    padding: 30px 12px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #000;
+}
+
+.mainvisual__fukidashi {
+    position: absolute;
+    bottom: -40px;
+    left: 16%;
+    width: 36%;
+    aspect-ratio: 1.5 / 1;
+    background-image: url("../images/ill-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.mainvisual__fukidashi span {
+    font-family: "A P-OTF Shin Go Min", serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    transform: translateY(-4px) rotate(-25deg);
+    color: #000;
+}
+
+.welcome__title,
+.enjoy-menu__title,
+.shop-intro__title,
+.access-intro__title,
+.contact__title {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.welcome__title svg,
+.enjoy-menu__title svg,
+.shop-intro__title svg,
+.access-intro__title svg,
+.contact__title svg {
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.welcome__title text,
+.enjoy-menu__title text,
+.shop-intro__title text,
+.access-intro__title text,
+.contact__title text {
+    font-family: "IM Fell English", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    fill: #203D26;
+}
+
+.shop-intro__title {
+    width: 200px;
+}
+
+.shop-intro__title text {
+    font-size: 24px;
+    letter-spacing: 1.6px;
+}
+
+
+.welcome {
+    padding: 55px 35px 45px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.welcome__tree {
+    display: block;
+    width: 85px;
+    margin: -5px auto 30px;
+}
+
+.welcome__text p {
+    margin-bottom: 20px;
+}
+
+.welcome__text p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== HOME / ABOUT ===== */
+
+.about {
+    padding: 30px 0 50px;
+    border-bottom: 1px solid #333;
+}
+
+.about__title {
+    width: 180px;
+    margin: 0 auto 25px;
+}
+
+.about__title svg {
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.about__title text {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    fill: #000;
+}
+
+.about__item {
+    position: relative;
+    width: 56%;
+    margin-bottom: -45px;
+}
+
+.about__item:nth-child(2) {
+    margin-left: auto;
+}
+
+.about__item:last-child {
+    margin-bottom: 0;
+}
+
+.about__name {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -5px;
+    z-index: 1;
+    color: #000;
+}
+
+
+.history {
+    position: relative;
+    padding: 45px 40px;
+    border-bottom: 1px solid #333;
+}
+
+.history__label,
+.history__end {
+    position: absolute;
+    padding: 5px 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.history__label {
+    top: 0;
+    left: 12%;
+    transform: translateY(-50%);
+    width: 110px;
+}
+
+.history__title {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #000;
+}
+
+.history__intro {
+    margin-bottom: 35px;
+}
+
+.history__list {
+    position: relative;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.history__list::before {
+    content: "";
+    position: absolute;
+    top: 10.5px;
+    bottom: -45px;
+    left: 0;
+    width: 1px;
+    background-color: #333;
+}
+
+.history__item {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.history__item:last-child {
+    padding-bottom: 0;
+}
+
+.history__item::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -26.5px;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.history__year {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.history__end {
+    bottom: 0;
+    right: 12%;
+    transform: translateY(50%);
+    width: 180px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 0 0;
+    text-align: center;
+    overflow: hidden;
+    container-type: inline-size;
+    background-image: url("../images/foooter-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.footer__top {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Holtwood One SC", serif;
+    font-size: 10px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.footer__arrow {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.footer__top:hover {
+    transform: translateY(-5px);
+}
+
+.footer__logo {
+    display: block;
+    width: 85px;
+    margin: 25px auto;
+    transition: transform 0.3s;
+}
+
+.footer__logo img {
+    display: block;
+    width: 100%;
+}
+
+.footer__logo:hover {
+    transform: scale(1.05);
+}
+
+.footer__title {
+    font-family: "Holtwood One SC", serif;
+    font-size: 9.6cqw;
+    line-height: 0.9;
+    color: #000;
+    white-space: nowrap;
+    margin: 0;
+    transform: translateY(3px);
+}
+
+/* ===== SIDE NAVIGATION ===== */
+
+.side-nav__logo {
+    display: block;
+    width: 65%;
+    margin: 0 auto 30px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.side-nav__logo img {
+    width: 100%;
+}
+
+.side-nav__menu {
+    position: relative;
+    padding: 30px 0 65px;
+}
+
+.side-nav__pole {
+    position: absolute;
+    top: 0;
+    left: 15.5%;
+    width: 66%;
+    height: 100%;
+    transform: scaleX(1.08);
+    z-index: 0;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08));
+}
+
+.side-nav__list {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+}
+
+.side-nav__item {
+    margin-bottom: 16px;
+}
+
+.side-nav__item:last-child {
+    margin-bottom: 0;
+}
+
+.side-nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 2.7 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95% auto;
+    font-family: "IM Fell English", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #000;
+    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.08));
+    transition: transform 0.3s;
+}
+
+.side-nav__link--enjoy {
+    background-image: url("../images/nav-menu-enjoy.png");
+}
+
+.side-nav__link--enjoy span {
+    transform: rotate(-5deg);
+}
+
+.side-nav__link--shop {
+    background-image: url("../images/nav-menu-shopcafe.png");
+}
+
+.side-nav__link--access {
+    background-image: url("../images/nav-menu-access.png");
+}
+
+.side-nav__link--access span {
+    transform: rotate(4deg);
+}
+
+.side-nav__link--contact {
+    background-image: url("../images/nav-menu-contact.png");
+}
+
+.side-nav__link--contact span {
+    transform: rotate(-6deg);
+}
+
+.side-nav__link:hover,
+.side-nav__logo:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ENJOY ===== */
+
+.enjoy-menu {
+    padding: 55px 30px 45px;
+    text-align: center;
+}
+
+.enjoy-menu__ill {
+    display: block;
+    width: 75px;
+    margin: -5px auto 25px;
+}
+
+.enjoy-menu__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+    list-style: none;
+}
+
+.enjoy-menu__item {
+    text-align: center;
+}
+
+.enjoy-menu__item a {
+    display: block;
+    width: 85%;
+    padding: 5px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.enjoy-menu__item a:hover {
+    background-color: var(--color-primary);
+}
+
+.enjoy-menu__item span {
+    letter-spacing: normal;
+    display: block;
+    margin-top: 6px;
+}
+
+.enjoy-contents {
+    padding: 15px 35px 0;
+}
+
+.enjoy-item {
+    margin-bottom: 65px;
+    scroll-margin-top: 30px;
+}
+
+.enjoy-item:last-child {
+    margin-bottom: 40px;
+}
+
+.enjoy-item__label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    padding: 5px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.enjoy-item__image {
+    height: auto;
+}
+
+.enjoy-item__subtitle {
+    position: relative;
+    font-family: "A P-OTF Folk ProN", serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: -24px 0 45px -8px;
+    color: #000;
+}
+
+.enjoy-item__text {
+    padding: 0 8px;
+}
+
+.enjoy-item__text h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* SEASONS */
+
+.seasons {
+    padding-bottom: 15px;
+}
+
+.seasons__slider {
+    position: relative;
+    display: grid;
+}
+
+.seasons__item {
+    position: relative;
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+.seasons__item.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.seasons__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 390 / 500;
+    object-fit: cover;
+    border-radius: 0 50% 0 0 / 0 55% 0 0;
+}
+
+.seasons__label {
+    position: absolute;
+    top: -20px;
+    right: 6%;
+    display: flex;
+    align-items: center;
+}
+
+.seasons__jp,
+.seasons__en {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-family: "A P-OTF UD ShinGoCon50 Pr6N", sans-serif;
+    font-weight: 400;
+}
+
+.seasons__jp {
+    background-image: url("../images/enjoy-nature-ill-whitestar.svg");
+    font-size: 20px;
+}
+
+.seasons__en {
+    margin: 105px 0 0 -12px;
+    background-image: url("../images/enjoy-nature-ill-blackstar.svg");
+    font-size: 12px;
+    color: #fff;
+}
+
+.seasons__caption {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    transform: translateY(50%);
+    width: max-content;
+    height: 62px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.seasons__controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.seasons__button {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seasons__button:hover,
+.seasons__button.is-active {
+    background-color: var(--color-primary);
+}
+
+/* ===== SHOP & CAFE ===== */
+
+.shop-intro {
+    padding: 55px 35px 45px;
+    text-align: center;
+}
+
+.shop-intro__ill {
+    display: block;
+    width: 65px;
+    margin: 0 auto 25px;
+}
+
+.shop-list {
+    padding: 0 35px;
+}
+
+.shop-item {
+    margin-bottom: 85px;
+    text-align: center;
+}
+
+.shop-item:last-child {
+    margin-bottom: 0;
+}
+
+.shop-item__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 35px;
+    background-color: #000;
+    border-radius: 50%;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+}
+
+.shop-item__name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: #000;
+    z-index: 1;
+}
+
+.shop-item__image {
+    height: auto;
+}
+
+.shop-item__info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.shop-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 65px;
+    margin: 50px auto 0;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* ACCESS */
+
+.access-intro {
+    padding: 55px 25px 60px;
+    text-align: center;
+}
+
+.access-intro__ill {
+    display: block;
+    width: 65px;
+    margin: 0 auto 30px;
+}
+
+.access-intro__heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.access-intro__info p {
+    margin-bottom: 8px;
+}
+
+.access-intro__info p:last-child {
+    margin-bottom: 0;
+}
+
+.access-map {
+    padding: 15px 30px 0;
+}
+
+.access-map__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    padding: 6px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.access-map__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border: 0;
+    filter: grayscale(100%);
+}
+
+.access-map__stations {
+    margin-top: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+.access-map__station {
+    margin-bottom: 25px;
+}
+
+.access-map__station:last-child {
+    margin-bottom: 0;
+}
+
+.access-map__station h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.access-map + .footer {
+    margin-top: 30px;
+}
+
+/* ACCESS ENTRANCE */
+
+.access-entrance {
+    padding: 70px 30px 0;
+    text-align: center;
+}
+
+.access-entrance__title {
+    width: 110px;
+    padding: 6px 0;
+    margin: 0 auto 30px;
+}
+
+.access-entrance__heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.access-entrance__text {
+    margin-bottom: 40px;
+}
+
+.access-entrance__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 20px;
+    list-style: none;
+}
+
+.access-entrance__item img {
+    height: auto;
+}
+
+.access-entrance__item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.access-entrance + .footer {
+    margin-top: 45px;
+}
+
+/* ===== CONTACT ===== */
+
+.contact {
+    padding: 55px 35px 0;
+}
+
+.contact__ill {
+    display: block;
+    width: 65px;
+    margin: 0 auto 30px;
+}
+
+.contact__steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    list-style: none;
+    margin-bottom: 45px;
+}
+
+.contact__step {
+    flex: 1;
+    padding: 8px 10px 8px 5px;
+    background-color: #C9C9B8;
+    color: #fff;
+    clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.contact__step span {
+    display: block;
+    font-size: 10px;
+}
+
+.contact__step.is-active {
+    background-color: #000;
+}
+
+.contact__field {
+    margin-bottom: 22px;
+}
+
+.contact__label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
+
+.contact__required {
+    color: #D9534F;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.contact__name {
+    display: flex;
+    gap: 12px;
+}
+
+.contact__name input {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea,
+.contact__form select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact__form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact__privacy {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.contact__privacy input {
+    accent-color: #203D26;
+}
+
+.contact__error {
+    color: #D9534F;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.contact__error:empty {
+    display: none;
+}
+
+.contact__button {
+    display: block;
+    width: 110px;
+    padding: 10px 0;
+    margin: 30px auto 0;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.contact__button:hover {
+    opacity: .7;
+}
+
+.contact__button--back {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact__message {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact__details {
+    overflow-wrap: anywhere;
+}
+
+.contact__details dt {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact__details dd {
+    padding: 12px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #333;
+    white-space: pre-wrap;
+}
+
+.contact__complete {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.contact__complete h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.contact__complete p {
+    margin-bottom: 10px;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.contact__form select {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='1.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 35px;
+}
+
+.contact__form select:invalid {
+    color: #999;
+}
+
+.contact__complete p:nth-of-type(2) {
+    font-size: 12px;
+    color: #666;
+}
+
+ /* MOBILE MENU  */
+
+.mobile-menu__button {
+    display: none;
+}
+
+/* BACK TO HOME */
+
+.home-guide {
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    width: 90px;
+    font-family: "IM Fell English", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+    text-align: left;
+}
+
+.home-guide span {
+    display: block;
+}
+
+.home-guide span:nth-child(1) {
+    transform: rotate(-8deg);
+}
+
+.home-guide span:nth-child(2) {
+    margin-left: 28px;
+    transform: rotate(8deg);
+}
+
+.home-guide span:nth-child(3) {
+    margin-left: 38px;
+    transform: rotate(-5deg);
+}
+
+.side-nav__logo .home-guide__arrow {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    top: -15px;
+    left: 80%;
+}
+
+
+.game-entry {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    transition: scale .3s;
+}
+
+.game-entry:hover {
+    scale: 1.08;
+}
+
+
+.game-entry__text {
+    display: block;
+    width: 100%;
+    animation: game-rotate 15s linear infinite;
+}
+
+.game-entry__text text {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    fill: #000;
+}
+
+
+.game-entry__character {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    animation: game-sway 1.8s ease-in-out infinite;
+}
+
+/* 外圈旋轉 */
+
+@keyframes game-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 角色左右搖晃 */
+
+@keyframes game-sway {
+    0%, 100% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+}
+
+
+.game-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 200;
+}
+
+.game-modal[hidden] {
+    display: none;
+}
+
+.game-modal__content {
+    position: relative;
+    width: min(390px, 100%, calc((100dvh - 30px) * 390 / 665));
+    aspect-ratio: 390 / 665;
+    background-color: #FBE28C;
+    overflow: hidden;
+    container-type: inline-size;
+    border-radius: 25px;
+}
+
+
+.game-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #000;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.game-modal__cloud {
+    position: absolute;
+    width: 70%;
+    pointer-events: none;
+}
+
+.game-modal__cloud--left {
+    top: 8%;
+    left: -3%;
+}
+
+.game-modal__cloud--right {
+    top: 46%;
+    right: -3%;
+}
+
+
+.game-modal__mark {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+}
+
+.game-modal__mark--01 {
+    width: 27%;
+    top: 7%;
+    left: 10%;
+    transform: rotate(-20deg);
+}
+
+.game-modal__mark--02 {
+    width: 18%;
+    top: 18%;
+    right: 8%;
+    transform: rotate(10deg);
+}
+
+.game-modal__mark--03 {
+    width: 19%;
+    top: 48%;
+    left: 6%;
+    transform: rotate(-15deg);
+}
+
+.game-modal__mark--04 {
+    width: 10%;
+    top: 70%;
+    right: 12%;
+    transform: rotate(15deg);
+}
+
+
+.game-modal__stone {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74%;
+    z-index: 2;
+}
+
+.game-modal__stone img {
+    display: block;
+    width: 100%;
+}
+
+
+.game-modal__message {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    font-size: 4.6cqw;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+    white-space: pre-line;
+}
+
+/* START・STOP・RETRY */
+
+.game-modal__start {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.game-modal__start img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 0 #A90000;
+    transition: filter .2s;
+}
+
+.game-modal__start:hover img {
+    filter: brightness(1.15);
+}
+
+.game-modal__start.is-pressed img {
+    animation: game-press .25s ease;
+}
+
+@keyframes game-press {
+    0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 8px 0 #A90000;
+    }
+
+    50% {
+        transform: translateY(7px);
+        box-shadow: 0 1px 0 #A90000;
+    }
+}
+
+
+.game-modal__hill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+body.game-open {
+    overflow: hidden;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 769px) {
+    .background {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+    }
+
+    .background__logo {
+        position: absolute;
+        top: 48%;
+        left: calc(25% - 107.5px);
+        transform: translate(-50%, -50%);
+        font-family: "IM Fell English", serif;
+        color: #000;
+        z-index: 1;
+    }
+
+    .background__hello {
+        display: block;
+        width: 66%;
+        margin-bottom: 20px;
+        overflow: visible;
+    }
+
+    .background__hello text {
+        font-family: "IM Fell English", serif;
+        font-size: 48px;
+        letter-spacing: 8px;
+        fill: #000;
+    }
+
+    .background__yoyogi {
+        display: block;
+        font-size: 5.5vw;
+        line-height: 1;
+    }
+
+    .background__cloud {
+        position: absolute;
+        width: 35%;
+    }
+
+    .background__cloud--left {
+        top: 10%;
+        left: 1%;
+        animation: cloud-left 15s linear infinite alternate;
+    }
+
+    .background__cloud--right {
+        top: 35%;
+        right: 1%;
+        animation: cloud-right 20s linear infinite alternate;
+    }
+
+    @keyframes cloud-left {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(120px);
+        }
+    }
+
+    @keyframes cloud-right {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-120px);
+        }
+    }
+
+    .background__hill {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .main {
+        position: relative;
+        width: 430px;
+    }
+
+    .side-nav {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: calc(75% + 107.5px);
+        transform: translate(-50%, -50%);
+        width: 220px;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .background__logo {
+        display: none;
+    }
+
+    .main {
+        margin-left: 11%;
+        margin-right: 0;
+    }
+
+    .side-nav {
+        left: calc((100% + 11vw + 430px) / 2);
+        width: 180px;
+    }
+
+    .side-nav__link {
+        font-size: 16px;
+    }
+
+    .background__cloud {
+        width: 40%;
+    }
+
+    .background__cloud--left {
+        top: 13%;
+        left: 2%;
+    }
+
+    .background__cloud--right {
+        top: 35%;
+        right: 0;
+    }
+
+    .game-entry {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) and (orientation: portrait) {
+    .side-nav {
+        top: 45%;
+    }
+
+    .background__hill {
+        width: 150%;
+        max-width: none;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-height: 650px) {
+    .side-nav {
+        top: 20px;
+        transform: translateX(-50%);
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu__button {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color: #FBE28C;
+        border: 1px solid #333;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .mobile-menu__button span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 2px;
+        transition: transform .3s, opacity .3s;
+    }
+
+    .side-nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        box-sizing: border-box;
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: safe center;
+        align-items: center;
+        background-color: var(--color-primary);
+        background-image: url("../images/nav-bg.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: auto 25%;
+        transform: none;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .4s, visibility .4s;
+        z-index: 90;
+    }
+
+    .side-nav.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .side-nav__logo {
+        width: 120px;
+        flex-shrink: 0;
+        margin: 0 auto 20px;
+    }
+
+    .side-nav__menu {
+        width: min(230px, 90vw);
+        flex-shrink: 0;
+    }
+
+    .mobile-menu__button.is-active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu__button.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu__button.is-active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .game-entry {
+        width: 90px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .game-entry__text,
+    .game-entry__character {
+        animation: none;
+    }
+
+}

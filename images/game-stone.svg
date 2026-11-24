@@ -1,0 +1,22 @@
+<svg width="530" height="360" viewBox="0 0 530 360" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_180_7897)">
+<use xlink:href="#stroke0_180_7897" fill="white"/>
+<mask id="stroke1_180_7897" fill="white">
+<use xlink:href="#stroke0_180_7897"/>
+</mask>
+<path d="M69.5655 113.273C47.6888 181.482 25.8767 249.691 4 317.901C58.3682 330.831 120.633 341.823 189.693 347.641C322.378 358.762 437.328 346.995 526 330.444C504.253 269.799 482.505 209.218 460.758 148.573L379.27 126.85L349.368 45.4514C307.232 30.3225 265.097 15.1289 222.962 0C171.83 37.7576 120.633 75.5152 69.5008 113.337L69.5655 113.273Z" stroke-width="2" stroke="black" mask="url(#stroke1_180_7897)"/>
+</g>
+<defs>
+<filter id="filter0_d_180_7897" x="0" y="0" width="530" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_180_7897"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_180_7897" result="shape"/>
+</filter>
+<path id="stroke0_180_7897" d="M69.5655 113.273C47.6888 181.482 25.8767 249.691 4 317.901C58.3682 330.831 120.633 341.823 189.693 347.641C322.378 358.762 437.328 346.995 526 330.444C504.253 269.799 482.505 209.218 460.758 148.573L379.27 126.85L349.368 45.4514C307.232 30.3225 265.097 15.1289 222.962 0C171.83 37.7576 120.633 75.5152 69.5008 113.337L69.5655 113.273Z"/>
+</defs>
+</svg>
